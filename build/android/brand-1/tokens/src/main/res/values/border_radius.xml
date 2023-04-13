@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Do not edit directly
+  Generated on Thu, 13 Apr 2023 12:13:09 GMT
+-->
+<resources>
+  <dimen name="border_radius_none">0dp</dimen>
+  <dimen name="border_radius_small">4dp</dimen>
+  <dimen name="border_radius_medium">8dp</dimen>
+  
+</resources>

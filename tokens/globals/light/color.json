@@ -1,0 +1,10 @@
+{
+  "color": {
+    "primary": {
+      "value": "{colorReference.neutral.100}"
+    },
+    "secondary": {
+      "value": "{colorReference.neutral.96}"
+    }
+  }
+}

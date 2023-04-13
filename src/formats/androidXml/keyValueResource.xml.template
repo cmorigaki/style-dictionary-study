@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<%= fileHeader({file, commentStyle: 'xml'}) %>
+<resources>
+  <% allTokens.forEach(function(token) {
+  %><<%= node %> name="<%= token.name %>"><%= token.value %></<%= node %>><% if (token.comment) { %><!-- <%= token.comment %> --><% } %>
+  <% }); %>
+</resources>

@@ -1,0 +1,27 @@
+<%= fileHeader({file, commentStyle: 'short'}) %>
+package <%= file.packageName %>;
+
+import androidx.compose.runtime.Immutable
+<%= importArray?.join('\n')?.concat('\n') %>
+@Immutable
+object <%= file.className %><%= parentCode %> {
+    <%= allTokens.map(function(token) {
+      let comment = "";
+      if (token.comment) {
+        comment = `/** ${token.comment} */\n    `
+      }
+      let modifier = "";
+      if (parentCode) {
+        modifier = "override "
+      }
+
+      let value = "";
+      if (token.isThemeReference) {
+        value = `\n        @Composable\n        get() = ${token.value}`;
+      } else {
+        value = ` = ${token.value}`;
+      }
+
+      return `${comment}${modifier}val ${token.name}${value}`;
+    }).join('\n    ' ) %>
+}

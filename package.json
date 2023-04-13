@@ -1,0 +1,25 @@
+{
+  "name": "style-dictionary-auto-rebuild-watcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "files": [
+    "build",
+    "properties"
+  ],
+  "scripts": {
+    "build": "ts-node ./src/index.ts",
+    "clean": "rm -rf build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/lodash": "^4.14.192",
+    "@types/node": "^18.15.11",
+    "style-dictionary": "3.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

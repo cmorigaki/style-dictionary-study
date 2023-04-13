@@ -1,0 +1,13 @@
+{
+  "sizing": {
+    "none": {
+      "value": "0"
+    },
+    "scale4": {
+      "value": "4"
+    },
+    "scale8": {
+      "value": "8"
+    }
+  }
+}
